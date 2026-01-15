@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Morph Vigenere Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="welcome-header"></header>
+    <main>
+        <section id="form-section">
+            <form id="cipherForm">
+                <label for="text">Enter Text:</label>
+                <input type="text" id="text" required>
+                <br>
+                <label for="key">Enter Key:</label>
+                <input type="text" id="key" required>
+                <br>
+                <label for="showCycles">
+                    <input type="checkbox" id="showCycles"> Display all cycles of key extension?
+                </label>
+                <br>
+                <button type="button" id="encryptBtn">Encrypt</button>
+                <button type="button" id="decryptBtn">Decrypt</button>
+                <button type="button" id="infoBtn">Cipher Info</button>
+                <button type="button" id="extendedKeyBtn">Show Extended Key</button>
+            </form>
+        </section>
+        <section id="output-section">
+            <h2>Output</h2>
+            <div id="output"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
